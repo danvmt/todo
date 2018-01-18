@@ -10,15 +10,25 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)todoPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)TodoPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AddItemPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)todoPage.xaml.cs">
-      <DependentUpon>todoPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)TodoPage.xaml.cs">
+      <DependentUpon>TodoPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Employee.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TodoItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AddItemPage.xaml.cs">
+      <DependentUpon>AddItemPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)TodoList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomCell.cs" />
   </ItemGroup>
 </Project>

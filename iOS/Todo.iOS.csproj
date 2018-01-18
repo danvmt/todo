@@ -114,6 +114,12 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blinky.png" />
+    <BundleResource Include="Resources\inky.png" />
+    <BundleResource Include="Resources\clyde.png" />
+    <BundleResource Include="Resources\pinky.png" />
+  </ItemGroup>
   <Import Project="..\todo\todo.projitems" Label="Shared" Condition="Exists('..\todo\todo.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />

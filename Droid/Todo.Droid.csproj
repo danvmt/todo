@@ -126,6 +126,10 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\blinky.png" />
+    <AndroidResource Include="Resources\drawable\inky.png" />
+    <AndroidResource Include="Resources\drawable\clyde.png" />
+    <AndroidResource Include="Resources\drawable\pinky.png" />
   </ItemGroup>
   <Import Project="..\todo\todo.projitems" Label="Shared" Condition="Exists('..\todo\todo.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

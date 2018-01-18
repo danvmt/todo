@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace todo
+namespace Todo
 {
     public partial class App : Application
     {
@@ -8,7 +8,9 @@ namespace todo
         {
             InitializeComponent();
 
-            MainPage = new todoPage();
+            //AppContext.TodoList = new TodoList();
+
+            MainPage = new NavigationPage(new TodoPage());
         }
 
         protected override void OnStart()

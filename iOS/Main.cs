@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace todo.iOS
+namespace Todo.iOS
 {
     public class Application
     {
